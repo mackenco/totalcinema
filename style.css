@@ -20,3 +20,21 @@ a {
   text-align: center;
   z-index: 1;
 }
+
+ul {
+  list-style: none;
+}
+
+i {
+  font-size: 36px;
+}
+
+.hoverable{
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.hoverable:hover{
+  color: #333;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+}
