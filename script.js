@@ -19,6 +19,7 @@ function init() {
   var sides = [
     {
       url: 'posx.jpg',
+      // url: 'earth.gif',
       position: [ -512, 0, 0 ],
       rotation: [ 0, Math.PI / 2, 0 ]
     },
