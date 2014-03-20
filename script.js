@@ -71,7 +71,7 @@ function init() {
   //
 
   document.addEventListener( 'mousedown', onDocumentMouseDown, false );
-  document.addEventListener( 'mousewheel', onDocumentMouseWheel, false );
+  // document.addEventListener( 'mousewheel', onDocumentMouseWheel, false );
 
   document.addEventListener( 'touchstart', onDocumentTouchStart, false );
   document.addEventListener( 'touchmove', onDocumentTouchMove, false );
@@ -151,7 +151,7 @@ function animate() {
 
   requestAnimationFrame( animate );
 
-  lon +=  0.1;
+  // lon +=  0.1;
   lat = Math.max( - 85, Math.min( 85, lat ) );
   phi = THREE.Math.degToRad( 90 - lat );
   theta = THREE.Math.degToRad( lon );
