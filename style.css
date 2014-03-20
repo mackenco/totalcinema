@@ -1,3 +1,12 @@
+html, body, header, h1, h2, h3, nav, ul, li, a, footer, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body {
   background-color: #000000;
   margin: 0;
@@ -9,7 +18,7 @@ a {
   color: #ffffff;
 }
 
-#info {
+nav {
   position: absolute;
   width: 100%;
   color: #ffffff;
@@ -23,6 +32,16 @@ a {
 
 ul {
   list-style: none;
+}
+
+nav > ul {
+  float: right;
+  padding-right: 20px;
+}
+
+nav > ul > li {
+  float: left;
+  padding: 10px 10px;
 }
 
 i {
