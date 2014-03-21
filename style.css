@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #ffffff;
+  color: #ccc;
 }
 
 nav {
@@ -49,11 +49,23 @@ i {
 }
 
 .hoverable{
-  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
 }
 
 .hoverable:hover{
   color: #333;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+}
+
+
+h1 {
+  font-family: 'Karla', serif;
+  position: absolute;
+  color: #ccc;
+  z-index:1;
+  font-weight: bold;
+  font-size: 48px;
+  padding: 10px 20px;
+  bottom: 0;
 }
