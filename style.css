@@ -133,7 +133,14 @@ i {
   z-index:3
 }
 
-.video-popup-close {
+.about-text {
+  background: #ccc;
+  height: 450px;
+  width: 800px;
+  margin: 10px;
+}
+
+.popup-close {
   background: transparent url("close-icon.svg") no-repeat top center;
   -webkit-background-size: 22px;
   -moz-background-size: 22px;
@@ -148,7 +155,7 @@ i {
   display: block;
 }
 
-.video-popup-close:hover {
+.popup-close:hover {
   opacity: 1;
   -ms-filter: none;
   filter: none
