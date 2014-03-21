@@ -2,7 +2,7 @@ var camera, scene, renderer;
 var geometry, material, mesh;
 var target = new THREE.Vector3();
 
-var lon = 90, lat = 0;
+var lon = 196, lat = 0;
 var phi = 0, theta = 0;
 
 var touchX, touchY;

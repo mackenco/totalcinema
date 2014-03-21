@@ -16,6 +16,7 @@ body {
 
 a {
   color: #ccc;
+  text-decoration: none;
 }
 
 nav {
@@ -53,19 +54,120 @@ i {
 }
 
 .hoverable:hover{
-  color: #333;
+  color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.15s ease-in-out;
 }
 
+.main {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 13%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 48px;
+  position:absolute;
+}
 
-h1 {
-  font-family: 'Karla', serif;
+.main-popup {
+  font-size: 16px;
+  vertical-align: top;
+  color: #fff;
+}
+
+.main-popup:hover {
+  color: #aaa;
+  -webkit-transition: all 0.2s ease-in-out;  
+}
+
+.contact {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;  
   position: absolute;
   color: #ccc;
   z-index:1;
   font-weight: bold;
-  font-size: 48px;
-  padding: 10px 20px;
+  font-size: 36px;
+  padding: 2px 10px;
   bottom: 0;
 }
+
+.contact:hover {
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.video-popup {
+  cursor: pointer;
+  height: 256px;
+  width: 376px;
+  display: block;
+}
+
+.video-backdrop{
+  display: none;
+  position: fixed;
+  background: rgba(0,0,0,0.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.video-popup-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 180px;
+  max-width: 100%;
+  width: 100%;
+  margin-left: -50%;
+  margin-top:-90px
+}
+
+.video-container iframe {
+  position: relative;
+  z-index:3
+}
+
+.video-popup-close {
+  background: transparent url("close-icon.svg") no-repeat top center;
+  -webkit-background-size: 22px;
+  -moz-background-size: 22px;
+  background-size: 22px;
+  cursor: pointer;
+  display: none;
+  height: 44px;
+  position: absolute;
+  opacity: .4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter :alpha(opacity=40);right:-44px;top:0;width:44px;z-index:2;
+  display: block;
+}
+
+.video-popup-close:hover {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none
+}
+
+@media screen and (min-width:37.5em) {
+  .video-popup-container {
+    max-width: 100%;
+    width: 100%;
+    margin-left: -50%;
+    height: 360px;
+    margin-top: -180px
+  }
+}
+
+@media screen and (min-width:56.25em) {
+  .video-popup-container {
+    margin-left: -400px;
+    width: 800px;
+    height: 450px;
+    margin-top: -225px
+  }

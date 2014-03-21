@@ -6,35 +6,67 @@
     <title>Total Cinema 360</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="ionicons.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Karla">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <script  src="jquery-1.7.1.min.js"></script>
+    <script src="video.js"></script>
   </head>
   <body>
     <script src="three.min.js"></script>
     <script src="CSS3DRenderer.js"></script>
 
-  <nav>
-      <ul>
-        <li>
-          <a href="https://www.youtube.com/channel/UC2iKsfCF3yBKCYetdrbgAKw" target="_blank">
-            <i class="icon ion-social-youtube-outline hoverable"></i>
-          </a>
-        </li>
+    <div id="toolsVideoShield" class="video-backdrop">
+      <div id="toolsVideo" class="video-popup-container"></div>
+    </div>
 
-        <li>
-          <a href="https://twitter.com/TotalCinema360" target="_blank">
-            <i class="icon ion-social-twitter hoverable"></i>
-          </a>
-        </li>
+  <div class="hud">
+    <nav>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/channel/UC2iKsfCF3yBKCYetdrbgAKw" target="_blank">
+              <i class="icon ion-social-youtube-outline hoverable"></i>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://www.facebook.com/TotalCinema360" target="_blank">
-            <i class="icon ion-social-facebook hoverable"></i>
-          </a>
-        </li>      
-    </ul>
-  </nav>
- 
- <h1>TOTAL CINEMA</h1> 
+          <li>
+            <a href="https://twitter.com/TotalCinema360" target="_blank">
+              <i class="icon ion-social-twitter hoverable"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/TotalCinema360" target="_blank">
+              <i class="icon ion-social-facebook hoverable"></i>
+            </a>
+          </li>      
+      </ul>
+    </nav>
+
+    <div class="main">
+      <h1>the <strong>future</strong> of storytelling</h1>
+      <h2>
+        <a id="video-popup" class="main-popup" href="http://vimeo.com/18554749" target="_blank" data-player-url="http://player.vimeo.com/video/18554749">watch</a>
+        <a id="about-popup" class="main-popup" href="#">learn</a>
+      </h2>
+    </div>
+
+    <script type="text/javascript">
+    //<![CDATA[
+    <!--
+    var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+    "=50){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+    ".substr(0,ol);}f(\")86,\\\"<6>-!l]r\\\"\\\\C530\\\\TF8528<7S>0$ :SN7100\\\\" +
+    "700\\\\t\\\\310\\\\400\\\\:F?_520\\\\500\\\\8,<({x500\\\\585{dea0=* $/&)2+6" +
+    "000\\\\J_[LX[Qn\\\\AXFAGI000\\\\|#z771\\\\j~40Lzok|hka\\\"\\\\!Fn\\\\400\\\\"+
+    "420\\\\730\\\\220\\\\O410\\\\WIEMr\\\\r\\\\:)2+ {'?* >*(!\\\"(f};o nruter};" +
+    "))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;++y)86<i(fi{)++i;l<i;0" +
+    "=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"                       ;
+    while(x=eval(x));
+    //-->
+    //]]>
+    </script>
+  </div>
+
   <script src="script.js"></script>
 
   </body>
