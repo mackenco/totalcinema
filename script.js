@@ -7,6 +7,8 @@ var phi = 0, theta = 0;
 
 var touchX, touchY;
 
+var arrowsVisible = true;
+
 init();
 animate();
 
@@ -107,6 +109,11 @@ function onDocumentMouseMove( event ) {
   lon -= movementX * 0.1;
   lat += movementY * 0.1;
 
+  if (arrowsVisible) {
+    var arrows = $(".arrow");
+    arrows.fadeOut(1200);
+    arrowsVisible = false;
+  }
 }
 
 function onDocumentMouseUp( event ) {
