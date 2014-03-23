@@ -1,6 +1,6 @@
 var getHtmlBlob = function() {
   return (function () {/*
-          <div class="tabs">
+       <div class="tabs">
           
          <div class="tab">
              <input type="radio" id="tab-1" name="tab-group-1" checked>
@@ -149,10 +149,13 @@ var getHtmlBlob = function() {
                 </div>
 
               </div>
-             </div> 
-         </div>
 
-          
-      </div>      
+             </div> 
+
+
+         </div>          
+
+      </div>   
+
       */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
 };
