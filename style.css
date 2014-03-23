@@ -1,3 +1,5 @@
+/*hud*/
+
 html, body, header, h1, h2, h3, h5, nav, ul, li, a, footer, small {
   margin: 0;
   padding: 0;
@@ -137,6 +139,8 @@ ul {
   -webkit-transition: all 0.2s ease-in-out;
 }
 
+/*video modal*/
+
 .video-popup {
   cursor: pointer;
   height: 256px;
@@ -169,13 +173,6 @@ ul {
 .video-container iframe {
   position: relative;
   z-index:3
-}
-
-.about-text {
-  background: #ccc;
-  height: 450px;
-  width: 800px;
-  margin: 10px;
 }
 
 .popup-close {
@@ -217,62 +214,19 @@ ul {
     margin-top: -225px;
   }
 
-.tabs {
-  position: relative;   
-  min-height: 200px; /* This part sucks */
-  clear: both;
-  margin: 25px 0;
+/*text modal*/
+
+.about-text {
+  background: #ccc;
+  height: 450px;
+  width: 800px;
+  margin: 10px;
 }
 
-.tab {
-  float: left;
-}
-
-.tab label {
-  background: #e4e3df; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  margin-left: -1px; 
-  position: relative;
-  left: 1px;
-  font: 14px 'notosans', sans-serif;
-}
-
-.spacer {
-  width: 100%;
-  background: white;
-}
-
-.tab [type=radio] {
-  display: none;   
-}
-
-.content {
-  position: absolute;
-  top: 28px;
-  left: 0;
-  background: #f4f3ef;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-  border: 1px solid #ccc; 
-  height: 370px;
-  width: 760px;
-  overflow-x: auto;
-}
-
-[type=radio]:checked ~ label {
-  background: #f4f3ef;
-  border-bottom: 1px solid #f4f3ef;
-  z-index: 2;
-}
-
-[type=radio]:checked ~ label ~ .content {
-  z-index: 1;
-}
+/*tabbed nav*/
 
 .content-h {
-   color: #11ABB0;
+   color: #2980b9;
    font-weight: bold; 
    font-family: 'Open Sans', sans-serif; 
 }
@@ -289,6 +243,10 @@ h2.content-h {
 .main-content-p {
   text-align: center;
   font: 14px 'notosans', sans-serif;
+}
+
+.main-content-p a {
+  color: #000;
 }
 
 .content-p {
@@ -347,4 +305,55 @@ h2.content-h {
   content: "";
   clear: both;
   display: table; 
+}
+
+/*tabbed nav*/
+
+.tabs {
+  position: relative;   
+  min-height: 200px; 
+  clear: both;
+  margin: 25px 0;
+}
+
+.tab {
+  float: left;
+}
+
+.tab label {
+  background: #e4e3df; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px;
+  font: 14px 'notosans', sans-serif;
+}
+
+.tab [type=radio] {
+  display: none;   
+}
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #f4f3ef;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+  height: 370px;
+  width: 760px;
+  overflow-x: auto;
+}
+
+[type=radio]:checked ~ label {
+  background: #f4f3ef;
+  border-bottom: 1px solid #f4f3ef;
+  z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
 }

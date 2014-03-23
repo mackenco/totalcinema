@@ -90,7 +90,7 @@ var getHtmlBlob = function() {
 
               <h1 class="content-h">Contact Us</h1>
 
-              <p class="main-content-p">To hire us, or if you have any questions about our 360 technology and services, contact us at contact@totalcinema360.com</p>
+              <p class="main-content-p">To hire us, or if you have any questions about our 360 technology and services, contact us at <a href="mailto:contact@totalcinema360.com" target="_blank">contact@totalcinema360.com</a></p>
 
               <h2 class="content-h">Our Mission</h2>
 
@@ -100,7 +100,7 @@ var getHtmlBlob = function() {
 
               <div id="team-wrapper" class="bgrid-halves cf">
 
-                <div class="column member">
+                <div class="member">
                     <img src="adrian.jpg" width="100" height="151" alt="adrian">
                   
                   <div class"member-name">
@@ -112,7 +112,7 @@ var getHtmlBlob = function() {
 
                 </div>
 
-                <div class="column member">
+                <div class="member">
                     <img src="craig.jpg" width="100" height="151" alt="adrian">
                   
                   <div class"member-name">
@@ -124,7 +124,7 @@ var getHtmlBlob = function() {
 
                 </div>
 
-                <div class="column member">
+                <div class="member">
                     <img src="alex.jpg" width="100" height="151" alt="adrian">
                   
                   <div class"member-name">
@@ -136,12 +136,12 @@ var getHtmlBlob = function() {
 
                 </div>
 
-                <div class="column member">
+                <div class="member">
                   <img src="nick.jpg" width="100" height="151" alt="adrian">
                 
                   <div class"member-name">
                      <h5><a href="mailto:nick@totalcinema360.com" target="_blank">Nicholas DiMichele</a></h5>
-                     <span>Technology Strategist</span>
+                     <span>360 Sound Director</span>
                   </div>
 
                   <p>Nick is a music producer, sound engineer, voice actor and musician living in New York. He records live and in studio for music events, albums, films and TV. He has appeared on 30 Rock, is a character on Pokemon!, and tours as a member of alternative band Ghost & Goblin.</p>
@@ -152,7 +152,6 @@ var getHtmlBlob = function() {
              </div> 
          </div>
 
-         <div class="spacer"></div>
           
       </div>      
       */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
