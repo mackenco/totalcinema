@@ -213,5 +213,58 @@ ul {
     margin-left: -400px;
     width: 800px;
     height: 450px;
-    margin-top: -225px
+    margin-top: -225px;
   }
+
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+
+.tab {
+  float: left;
+}
+
+.tab label {
+  background: #e4e3df; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px;
+}
+
+.spacer {
+  width: 100%;
+  background: white;
+}
+
+.tab [type=radio] {
+  display: none;   
+}
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #f4f3ef;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+  height: 370px;
+  width: 760px;
+  overflow-x: auto;
+}
+
+[type=radio]:checked ~ label {
+  background: #f4f3ef;
+  border-bottom: 1px solid #f4f3ef;
+  z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}

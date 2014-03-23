@@ -3,6 +3,10 @@ $(function(){
     var $videoButton = $('#video-popup');
     var $aboutButton = $('#about-popup');
     var $toolsVideoShield = $('#toolsVideoShield');
+    var $toolsVideo = $("#toolsVideo");
+    var tabClicked = false;
+
+    var htmlBlob = getHtmlBlob();
 
     $videoButton.animate({
         opacity: 1.0
@@ -31,22 +35,33 @@ $(function(){
         if ($("#toolsVideo iframe").length == 0) {
 
             $("#toolsVideo")
-                .html('<div class="about-text">360 Video is a new media technology that uses multiple camera lenses to capture different sides of a space simultaneously and stitch the images together to form a seamless environment. At playback, users control where they are looking from a fixed point in a visual sphere, resulting in an unparalleled level of immersion.</div>')
+                .html(htmlBlob)
                 .append('<div id="popup-close" class="popup-close"></div>');
         }
 
         event.preventDefault();
     });
 
+    $toolsVideo.click(doNothing);
     $toolsVideoShield.click(closeShield);
-    $('popup-close').click(closeShield);
+    $('.popup-close').click(closeShield);
 
     $(document).keyup(function(e) {
-        if (e.keyCode == 27) { closeShield(); }
+        if (e.keyCode == 27) { closeShield();}
     });
 
+    function doNothing(event) {
+        var target = $(event.target);
+        if (target[0].id != "popup-close") {
+            tabClicked = true;
+        }
+    }
+
     function closeShield() {
-        $toolsVideoShield.hide();
-        $("#toolsVideo").empty();
+        if (!tabClicked) {
+            $toolsVideoShield.hide();
+            $("#toolsVideo").empty();
+        }
+        tabClicked = false;
     }
 });
