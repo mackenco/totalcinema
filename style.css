@@ -91,7 +91,7 @@ ul {
 }
 
 .hoverable:hover{
-  color: #fff;
+  opacity: .5;
   cursor: pointer;
   -webkit-transition: all 0.15s ease-in-out;
 }
@@ -107,6 +107,7 @@ ul {
   font-size: 48px;
   position:absolute;
 }
+
 
 .main-popup {
   font-size: 16px;
@@ -229,11 +230,12 @@ ul {
 
 .tab label {
   background: #e4e3df; 
-  padding: 10px; 
+  padding: 12px; 
   border: 1px solid #ccc; 
   margin-left: -1px; 
   position: relative;
   left: 1px;
+  font: 14px 'notosans', sans-serif;
 }
 
 .spacer {
@@ -267,4 +269,36 @@ ul {
 
 [type=radio]:checked ~ label ~ .content {
   z-index: 1;
+}
+
+.content-h {
+   color: #11ABB0;
+   font-weight: bold; 
+   font-family: 'Open Sans', sans-serif; 
+}
+
+h1.content-h {
+  font-size: 24px;
+  text-align: center;
+}
+
+h2.content-h {
+  font-size: 18px;
+}
+
+.main-content-p {
+  text-align: center;
+  font: 14px 'notosans', sans-serif;
+}
+
+.content-p {
+  color: #636C75;
+  font: 12px 'notosans', sans-serif;
+  border-bottom: 1px dotted #d8d8d8;
+  padding-bottom: 18px;
+}
+
+.content-p:last-child {
+  border-bottom: none;
+  padding-bottom: 6px;
 }
