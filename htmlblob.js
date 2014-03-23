@@ -99,6 +99,7 @@ var getHtmlBlob = function() {
               <h2 class="content-h">Team</h2>
 
               <div id="team-wrapper" class="bgrid-halves cf">
+
                 <div class="column member">
                     <img src="adrian.jpg" width="100" height="151" alt="adrian">
                   
@@ -111,23 +112,43 @@ var getHtmlBlob = function() {
 
                 </div>
 
+                <div class="column member">
+                    <img src="craig.jpg" width="100" height="151" alt="adrian">
+                  
+                  <div class"member-name">
+                     <h5><a href="mailto:craig@totalcinema360.com" target="_blank">Craig Gilbert</a></h5>
+                     <span>Co-Founder</span>
+                  </div>
 
-              <h3>Craig Gilbert, Co-Founder</h3>
-              <h3>craig@totalcinema360.com</h3>
+                  <p>Craig is a writer, director, and producer currently in development on a feature film designed for 360 degree video. His films have been featured at international film festivals including Cannes, Warsaw, and Palm Beach.</p>
 
-              <p>Craig is a writer, director, and producer currently in development on a feature film designed for 360 degree video. His films have been featured at international film festivals including Cannes, Warsaw, and Palm Beach.</p>
+                </div>
 
-              <h3>Alex Grau, Technology Strategist</h3>
-              <h3>alex@totalcinema360.com</h3>
+                <div class="column member">
+                    <img src="alex.jpg" width="100" height="151" alt="adrian">
+                  
+                  <div class"member-name">
+                     <h5><a href="mailto:alex@totalcinema360.com" target="_blank">Alex Grau</a></h5>
+                     <span>Technology Strategist</span>
+                  </div>
 
-              <p>Alex is a software and hardware engineer with 6 years of experience working with NYC tech start-ups. He studied computer science and psychology at NYU, where his published research focused on human-computer interaction. In addition to software consulting for Barnes & Nobel, Verizon, and Actor Machine, he worked as an engineer at TouchCo from founding to successful acquisition and is a founding member of Tactonic Technologies.</p>
+                  <p>Alex is a software and hardware engineer with 6 years of experience working with NYC tech start-ups. He studied computer science and psychology at NYU, where his published research focused on human-computer interaction. In addition to software consulting for Barnes & Nobel, Verizon, and Actor Machine, he worked as an engineer at TouchCo from founding to successful acquisition and is a founding member of Tactonic Technologies.</p>
 
-              <h3>Nicholas DiMichele, 360 Sound Director</h3>
-              <h3>nick@totalcinema360.com</h3>
+                </div>
 
-              <p>Nick is a music producer, sound engineer, voice actor and musician living in New York. He records live and in studio for music events, albums, films and TV. He has appeared on 30 Rock, is a character on Pokemon!, and tours as a member of alternative band Ghost & Goblin.</p>
+                <div class="column member">
+                  <img src="nick.jpg" width="100" height="151" alt="adrian">
+                
+                  <div class"member-name">
+                     <h5><a href="mailto:nick@totalcinema360.com" target="_blank">Nicholas DiMichele</a></h5>
+                     <span>Technology Strategist</span>
+                  </div>
 
-</div>
+                  <p>Nick is a music producer, sound engineer, voice actor and musician living in New York. He records live and in studio for music events, albums, films and TV. He has appeared on 30 Rock, is a character on Pokemon!, and tours as a member of alternative band Ghost & Goblin.</p>
+
+                </div>
+
+              </div>
              </div> 
          </div>
 
