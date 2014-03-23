@@ -98,10 +98,19 @@ var getHtmlBlob = function() {
 
               <h2 class="content-h">Team</h2>
 
-              <h3>Adrian Vasquez de Velasco, Co-Founder</h3>
-              <h3>adrian@totalcinema360.com</h3>
+              <div id="team-wrapper" class="bgrid-halves cf">
+                <div class="column member">
+                    <img src="adrian.jpg" width="100" height="151" alt="adrian">
+                  
+                  <div class"member-name">
+                     <h5><a href="mailto:adrian@totalcinema360.com" target="_blank">Adrian Vasquez de Velasco</a></h5>
+                     <span>Co-Founder</span>
+                  </div>
 
-              <p>Adrian is a writer, director, and producer currently in development on a feature film designed for 360 degree video. His films have screened at the Smithsonian Institute, the World Sustainability Forum, and the Environmental Film Festival in Washington, DC</p>
+                  <p>Adrian is a writer, director, and producer currently in development on a feature film designed for 360 degree video. His films have screened at the Smithsonian Institute, the World Sustainability Forum, and the Environmental Film Festival in Washington, DC</p>
+
+                </div>
+
 
               <h3>Craig Gilbert, Co-Founder</h3>
               <h3>craig@totalcinema360.com</h3>
@@ -118,6 +127,7 @@ var getHtmlBlob = function() {
 
               <p>Nick is a music producer, sound engineer, voice actor and musician living in New York. He records live and in studio for music events, albums, films and TV. He has appeared on 30 Rock, is a character on Pokemon!, and tours as a member of alternative band Ghost & Goblin.</p>
 
+</div>
              </div> 
          </div>
 

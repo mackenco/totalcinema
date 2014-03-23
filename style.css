@@ -1,4 +1,4 @@
-html, body, header, h1, h2, h3, nav, ul, li, a, footer, small {
+html, body, header, h1, h2, h3, h5, nav, ul, li, a, footer, small {
   margin: 0;
   padding: 0;
   border: 0;
@@ -301,4 +301,33 @@ h2.content-h {
 .content-p:last-child {
   border-bottom: none;
   padding-bottom: 6px;
+}
+
+#team-wrapper .member {
+   margin-bottom: 24px;
+   margin-top: 12px;
+}
+#team-wrapper img {
+  margin-bottom: 12px;
+}
+#team-wrapper h5 {
+   font: bold 16px/24px 'notosans', sans-serif;
+}
+
+#team-wrapper a {
+  color: #000;
+}
+
+#team-wrapper span {
+   position: relative;
+   top: -6px;
+   font-size: 13px;
+   line-height: 18px;
+   color: #969696;
+}
+
+#team-wrapper p {
+  font-family: 'notosans', sans-serif;
+  color: #838C95;
+  font-size: 14px;
 }
