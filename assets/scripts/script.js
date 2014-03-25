@@ -13,9 +13,7 @@ init();
 animate();
 
 function init() {
-
   camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
-
   scene = new THREE.Scene();
 
   var sides = [
@@ -26,26 +24,30 @@ function init() {
     },
     {
       url: 'assets/images/negx.jpg',
+      position: [ 512, 0, 0 ],
       rotation: [ 0, -Math.PI / 2, 0 ]
     },
     {
       url: 'assets/images/posy.jpg',
+      position: [ 0,  512, 0 ],
       rotation: [ Math.PI / 2, 0, Math.PI ]
     },
     {
       url: 'assets/images/negy.jpg',
+      position: [ 0, -512, 0 ],
       rotation: [ - Math.PI / 2, 0, Math.PI ]
     },
     {
       url: 'assets/images/posz.jpg',
+      position: [ 0, 0,  512 ],
       rotation: [ 0, Math.PI, 0 ]
     },
     {
       url: 'assets/images/negz.jpg',
+      position: [ 0, 0, -512 ],
       rotation: [ 0, 0, 0 ]
     }
   ];
-
   for ( var i = 0; i < sides.length; i ++ ) {
 
     var side = sides[ i ];
@@ -60,7 +62,6 @@ function init() {
     scene.add( object );
 
   }
-
   renderer = new THREE.CSS3DRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   document.body.appendChild( renderer.domElement );
